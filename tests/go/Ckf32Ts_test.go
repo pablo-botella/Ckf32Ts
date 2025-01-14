@@ -13,8 +13,7 @@ func TestFromTime(t *testing.T) {
 	// Generar CKF32TS
 	ckf := Ckf32Ts.FromTime(refTime)
 
-	// Validar la representación como string
-	expected := "51CHR2PR" // Nueva representación esperada según el cálculo y formato ajustado
+	expected := "51CHR2PR"
 	t.Logf("Valor obtenido: %s", ckf.ToString())
 	if ckf.ToString() != expected {
 		t.Errorf("Esperado %s, pero se obtuvo %s", expected, ckf.ToString())
